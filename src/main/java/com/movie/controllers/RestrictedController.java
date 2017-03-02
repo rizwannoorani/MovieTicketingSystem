@@ -35,9 +35,7 @@ public class RestrictedController {
         }
 
         model.addAttribute("appName", app.getName());
-        model.addAttribute("crossLink", crossLink);
-        model.addAttribute("messagePrimary", messagePrimary);
-        model.addAttribute("messageSecondary", messageSecondary);
+       
         return "restricted/secret";
     }
 }
