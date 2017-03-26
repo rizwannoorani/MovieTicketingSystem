@@ -14,7 +14,7 @@ public class HomeController {
     @Autowired
     Application app;
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String home(HttpServletRequest req, Model model) {
         model.addAttribute("status", req.getParameter("status"));
 
@@ -23,4 +23,6 @@ public class HomeController {
 
         return "home";
     }
+    
+    
 }

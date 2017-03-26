@@ -36,6 +36,6 @@ public class RestrictedController {
 
         model.addAttribute("appName", app.getName());
        
-        return "restricted/secret";
+        return "/restricted/secret";
     }
 }
